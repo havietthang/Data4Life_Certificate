@@ -1,0 +1,98 @@
+:root{
+  --brand:#0b3a82; --accent:#e1a500; --soft:#f7f9fc; --line:#e5e7eb; --ink:#0b1220;
+}
+
+/* Base */
+body{background:#fff;color:var(--ink)}
+.main-wrap{padding:20px 0}
+.table td,.table th{vertical-align:middle}
+
+/* Cards / badges */
+.section-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:18px;box-shadow:0 6px 24px rgba(2,6,23,.06)}
+.card-min{border:1px solid var(--line);border-radius:10px;padding:12px}
+.badge-state{font-weight:700;border-radius:999px;padding:2px 8px;font-size:12px}
+.badge-valid{background:#e6f6ec;color:#14532d}
+.badge-revoked{background:#feecec;color:#991b1b}
+.badge-expired{background:#fff7ed;color:#9a3412}
+.badge-replaced{background:#eef2ff;color:#3730a3}
+.kbd{font-family:ui-monospace,monospace;background:#0b1020;color:#e5e7eb;padding:2px 6px;border-radius:6px}
+
+/* Buttons */
+.btn-outline-brand{border-color:var(--brand);color:var(--brand)}
+.btn-outline-brand:hover{background:var(--brand);color:#fff}
+
+/* Nav */
+.nav-app a{font-weight:700}
+
+/* Demo note */
+.demo-banner{background:#fff8e1;border:1px dashed #f59e0b;border-left:4px solid #f59e0b;color:#92400e;padding:10px 12px;border-radius:10px;margin:12px 0}
+.footer-mini{font-size:12px;color:#64748b}
+
+/* --- HERO: full-bleed banner with no blue tint --- */
+.hero-lite{
+  position: relative;
+  color:#fff;
+  padding: 40px clamp(16px, 6vw, 72px);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-bottom: 18px;
+  border-radius: 0;
+  background-image: url("../images/hero-banner.jpg"); /* ensure this path exists */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-lite h3, .hero-lite h4, .hero-lite .lead{
+  text-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+.hero-lite .lead{opacity:.95}
+
+/* Header */
+.header{border-bottom:1px solid #e5e7eb}
+.header .content{display:flex;align-items:center}
+.header .logo img{height:68px} /* was 54px — make logo slightly bigger */
+
+/* Top menu bar */
+.header-nav{border-bottom:1px solid #e5e7eb}
+.header-nav .menus>li>a{font-weight:700}
+
+/* Right account: remove the little caret/square */
+.header-account .username .icon{display:none !important;}
+.header-account .username:after{content:none !important;display:none !important;}
+
+/* Optional: keep avatar visible; uncomment to hide it too */
+/* .header-account .user .avatar{display:none !important;} */
+
+/* Inline SVG home icon in nav */
+.header-nav .menus>li>a svg{
+  width:20px;height:20px;vertical-align:-3px;fill:currentColor;
+}
+
+/* Modal (for share etc.) */
+.modal.show{display:block}
+.modal .popup-box{background:#fff;border-radius:12px;padding:16px;margin:40px auto}
+
+/* ---------- FIX: constrain leading SVG icons in cards ---------- */
+.section-card .d-flex > img,
+.section-card img.lead-icon,
+.section-card img.icon-40 {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: contain;
+  flex: 0 0 40px;
+  display: inline-block;
+}
+/* Extra safety: any SVG used as a card figure should not stretch */
+.section-card img[src$=".svg"] {
+  max-width: 40px !important;
+  height: 40px !important;
+  object-fit: contain;
+}
+
+/* Utility class to apply manually in HTML when needed */
+.icon-40{width:40px !important;height:40px !important;object-fit:contain;flex:0 0 40px;display:inline-block}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero-lite{border-radius:0}
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cổng công dân — mô phỏng VNeID</title>
+  <link rel="stylesheet" href="https://dichvucong.gov.vn/p/home/theme/vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://dichvucong.gov.vn/p/home/theme/vendor/iconsax/style.css">
+  <link rel="stylesheet" href="https://dichvucong.gov.vn/p/home/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://dichvucong.gov.vn/p/home/theme/vendor/ap8/css/style.css">
+  <link rel="stylesheet" href="https://dichvucong.gov.vn/p/home/theme/css/style.css?version=9">
+  <link rel="shortcut icon" href="https://dichvucong.gov.vn/p/home/img/header/quoc_huy.png">
+  <link rel="stylesheet" href="assets/css/gov-skin.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="relative content d-flex align-items-center justify-content-between">
+        <div class="logo-text">
+          <a class="logo" href="index.html">
+            <img src="https://dichvucong.gov.vn/p/home/theme/img/header/logo.png" alt="Cổng DVCQG">
+          </a>
+        </div>
+        <div class="header-account dropdown d-none d-md-block">
+          <div class="user" data-toggle="dropdown">
+            <div class="avatar" style="background-image:url(https://dichvucong.gov.vn/p/home/theme/img/header/user-avatar.png)"></div>
+            <div class="username">Khách truy cập</div>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a><span class="icon -ap icon-user5"></span> Bản mô phỏng</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="header-nav">
+    <div class="container">
+      <ul id="main-menu" class="pull-left menus nav-app">
+        <li class="active" id="home-page">
+          <a href="index.html" aria-label="Trang chủ">
+            <img src="assets/images/home-icon-silhouette-svgrepo-com.svg" alt="Trang chủ" width="20" height="20" style="vertical-align:middle"/>
+          </a>
+        </li>
+        <li><a href="citizen.html">Công dân</a></li>
+        <li><a href="lookup.html">Tra cứu công khai</a></li>
+        <li><a href="issuer.html">Đơn vị cấp phát</a></li>
+        <li><a href="gov.html">Cơ quan quản lý</a></li>
+        <li><a href="digitize.html">Số hoá hồ sơ cũ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="header-bottom"><div class="container"><ul id="list-dropdown"></ul></div></div>
+
+  <div class="container main-wrap">
+    <div class="hero-lite">
+      <h4 class="mb-1">CỔNG CÔNG DÂN</h4>
+      <div class="lead">Đăng nhập mô phỏng (VNeID giả lập) để xem văn bằng của bạn.</div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5"><div class="section-card">
+        <h5 class="mb-3"><i class="fa fa-id-card-o"></i> Đăng nhập</h5>
+        <div class="form-group">
+          <label>Tên đăng nhập</label>
+          <input id="login-username" class="form-control" placeholder="havietthang hoặc nguyenvana">
+        </div>
+        <div class="d-flex gap-2">
+          <button class="btn btn-primary btn-sm" id="btn-login"><i class="fa fa-sign-in"></i> Đăng nhập</button>
+          <button class="btn btn-default btn-sm" id="btn-logout">Đăng xuất</button>
+        </div>
+        <p class="text-muted mt-2 small">Kiểm tra tên có trong danh sách người dùng mô phỏng, không kết nối VNeID thật.</p>
+        <div class="card-min mt-2"><strong>Trạng thái:</strong> <span id="login-state" class="text-muted">Chưa đăng nhập</span></div>
+      </div></div>
+
+      <div class="col-md-7"><div class="section-card">
+        <h5 class="mb-3"><i class="fa fa-certificate"></i> Giấy khen • Chứng chỉ • Văn bằng</h5>
+        <div id="my-diplomas"></div>
+      </div></div>
+    </div>
+
+    <div id="modal-share" class="modal" style="display:none">
+      <div class="popup-box" style="max-width:600px">
+        <div class="head"><div class="title">Chia sẻ văn bằng</div></div>
+        <div id="share-info" class="mt-2"></div>
+        <div class="mt-2 d-flex gap-2">
+          <button class="btn btn-success btn-sm" id="btn-create-otp"><i class="fa fa-key"></i> Tạo OTP 5 phút</button>
+          <button class="btn btn-default btn-sm" id="btn-close-share">Đóng</button>
+        </div>
+        <div id="share-result" class="mt-2"></div>
+      </div>
+    </div>
+
+    <div class="demo-banner"><strong>Lưu ý:</strong> Đây là <em>bản mô phỏng giao diện</em> phục vụ demo (không kết nối hệ thống thật).</div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="container d-flex flex-wrap gap-3">
+        <div class="add"><p>Cơ quan chủ quản: Văn phòng Chính phủ</p></div>
+        <div class="add"><p>www.dichvucong.gov.vn</p></div>
+        <div class="add"><p>Tổng đài hỗ trợ: 18001096</p></div>
+        <div class="add"><p>Email: dichvucong@chinhphu.vn</p></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

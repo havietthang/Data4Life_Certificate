@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Cổng Văn bằng điện tử — Bản mô phỏng</title>
+<link href="https://dichvucong.gov.vn/p/home/theme/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://dichvucong.gov.vn/p/home/theme/vendor/iconsax/style.css" rel="stylesheet"/>
+<link href="https://dichvucong.gov.vn/p/home/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://dichvucong.gov.vn/p/home/theme/vendor/ap8/css/style.css" rel="stylesheet"/>
+<link href="https://dichvucong.gov.vn/p/home/theme/css/style.css?version=9" rel="stylesheet"/>
+<link href="https://dichvucong.gov.vn/p/home/img/header/quoc_huy.png" rel="shortcut icon"/>
+<link href="assets/css/gov-skin.css" rel="stylesheet"/>
+<style>
+    .section-card{position:relative}
+    /* make whole card clickable */
+    .stretched-link{position:absolute; inset:0; z-index:1; border-radius:10px}
+    .section-card:hover{box-shadow:0 10px 28px rgba(2,6,23,.10)}
+    .section-card:focus-within{outline:2px solid #174ea6; outline-offset:2px}
+    /* keep buttons visible above overlay */
+    .section-card .btn{position:relative; z-index:2}
+    /* remove any theme-provided square/icon before text */
+    .section-card .btn i,
+    .section-card .btn::before{display:none !important; content:none !important}
+  </style>
+</head>
+<body>
+<div class="header">
+<div class="container">
+<div class="relative content d-flex align-items-center justify-content-between">
+<div class="logo-text">
+<a class="logo" href="index.html">
+<img alt="Cổng DVCQG" src="https://dichvucong.gov.vn/p/home/theme/img/header/logo.png"/>
+</a>
+</div>
+<div class="header-account dropdown d-none d-md-block">
+<div class="user" data-toggle="dropdown">
+<div class="avatar" style="background-image:url(https://dichvucong.gov.vn/p/home/theme/img/header/user-avatar.png)"></div>
+<div class="username">Khách truy cập <span class="icon fa fa-angle-down"></span></div>
+</div>
+<ul class="dropdown-menu">
+<li><a><span class="icon -ap icon-user5"></span> Bản mô phỏng</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<nav class="header-nav">
+<div class="container">
+<ul class="pull-left menus nav-app" id="main-menu">
+<li class="active" id="home-page">
+<a aria-label="Trang chủ" href="index.html">
+<img alt="Trang chủ" height="20" src="assets/images/home-icon-silhouette-svgrepo-com.svg" style="vertical-align:middle" width="20"/>
+</a>
+</li>
+<li><a href="citizen.html">Công dân</a></li>
+<li><a href="lookup.html">Tra cứu công khai</a></li>
+<li><a href="issuer.html">Đơn vị cấp phát</a></li>
+<li><a href="gov.html">Cơ quan quản lý</a></li>
+<li><a href="digitize.html">Số hoá hồ sơ cũ</a></li>
+</ul>
+</div>
+</nav>
+<div class="header-bottom"><div class="container"><ul id="list-dropdown"></ul></div></div>
+<div class="container main-wrap">
+<div class="hero-lite hero-image">
+<h3 style="margin:0 0 6px 0">CỔNG VĂN BẰNG ĐIỆN TỬ</h3>
+<p class="lead">Giao diện mô phỏng dựa trên Cổng Dịch vụ công Quốc gia — dùng cho demo Data for Life 2025.</p>
+</div>
+<div class="row">
+<!-- CÔNG DÂN -->
+<div class="col-md-4">
+<div class="section-card">
+<a aria-label="Mở cổng công dân" class="stretched-link" href="citizen.html"></a>
+<div class="d-flex align-items-center gap-2">
+<img alt="" height="40" src="https://dichvucong.gov.vn/p/home/theme/img/home/congdan/cutru.svg"/>
+<h5 class="mb-0">Cổng công dân</h5>
+</div>
+<p class="mt-2">Xem và chia sẻ văn bằng có kiểm soát (mock VNeID).</p>
+<a class="btn btn-outline-brand btn-sm mt-2" href="citizen.html">Vào cổng</a><a class="btn btn-outline-brand btn-sm mt-2" href="vneid/vneid-home.html">mock vneid</a>
+</div>
+</div>
+<!-- TRA CỨU CÔNG KHAI -->
+<div class="col-md-4">
+<div class="section-card">
+<a aria-label="Mở tra cứu công khai" class="stretched-link" href="lookup.html"></a>
+<div class="d-flex align-items-center gap-2">
+<img alt="" height="40" src="https://dichvucong.gov.vn/p/home/theme/img/home/congdan/balance.svg"/>
+<h5 class="mb-0">Tra cứu công khai</h5>
+</div>
+<p class="mt-2">Kiểm chứng nhanh theo mã seri hoặc link tạm thời.</p>
+<a class="btn btn-outline-brand btn-sm mt-2" href="lookup.html">Tra cứu</a><a class="btn btn-outline-brand btn-sm mt-2" href="vneid/vneid-verify.html">mock vneid scan</a>
+</div>
+</div>
+<!-- ĐƠN VỊ CẤP PHÁT -->
+<div class="col-md-4">
+<div class="section-card">
+<a aria-label="Mở đơn vị cấp phát" class="stretched-link" href="issuer.html"></a>
+<div class="d-flex align-items-center gap-2">
+<img alt="" height="40" src="https://dichvucong.gov.vn/p/home/theme/img/home/doanhnghiep/tlcn.svg"/>
+<h5 class="mb-0">Đơn vị cấp phát</h5>
+</div>
+<p class="mt-2">Đăng ký phát hành, sinh số seri, gửi phê duyệt.</p>
+<a class="btn btn-outline-brand btn-sm mt-2" href="issuer.html">Truy cập</a>
+</div>
+</div>
+</div>
+<div class="row mt-3">
+<!-- CƠ QUAN QUẢN LÝ -->
+<div class="col-md-4">
+<div class="section-card">
+<a aria-label="Mở cơ quan quản lý" class="stretched-link" href="gov.html"></a>
+<div class="d-flex align-items-center gap-2">
+<img alt="" height="40" src="https://dichvucong.gov.vn/p/home/theme/img/home/doanhnghiep/dauthau.svg"/>
+<h5 class="mb-0">Cơ quan quản lý</h5>
+</div>
+<p class="mt-2">Phê duyệt/thu hồi và công bố sổ thu hồi.</p>
+<a class="btn btn-outline-brand btn-sm mt-2" href="gov.html">Vào cổng</a>
+</div>
+</div>
+<!-- SỐ HOÁ HỒ SƠ CŨ -->
+<div class="col-md-4">
+<div class="section-card">
+<a aria-label="Mở số hoá hồ sơ cũ" class="stretched-link" href="digitize.html"></a>
+<div class="d-flex align-items-center gap-2">
+<img alt="" height="40" src="https://dichvucong.gov.vn/p/home/theme/img/home/doanhnghiep/taicautrucdn.svg"/>
+<h5 class="mb-0">Số hoá hồ sơ cũ</h5>
+</div>
+<p class="mt-2">Nộp scan hồ sơ cũ, đối soát và xác thực.</p>
+<a class="btn btn-outline-brand btn-sm mt-2" href="digitize.html">Thực hiện</a>
+</div>
+</div>
+</div>
+<div class="demo-banner"><strong>Lưu ý:</strong> Đây là <em>bản mô phỏng giao diện</em> phục vụ demo (không kết nối hệ thống thật).</div>
+</div>
+<footer class="footer">
+<div class="footer-bottom">
+<div class="container d-flex flex-wrap gap-3">
+<div class="add"><p>Cơ quan chủ quản: Văn phòng Chính phủ</p></div>
+<div class="add"><p>www.dichvucong.gov.vn</p></div>
+<div class="add"><p>Tổng đài hỗ trợ: 18001096</p></div>
+<div class="add"><p>Email: dichvucong@chinhphu.vn</p></div>
+</div>
+</div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

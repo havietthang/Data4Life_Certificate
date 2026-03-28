@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xác thực văn bằng — VNeID (mock)</title>
+<link rel="stylesheet" href="assets/css/vneid-mock.css?v=base">
+</head>
+<body class="vneid">
+<div class="v-page">
+  <div class="v-top">
+    <a class="v-back" href="vneid-home.html">← Quay lại</a>
+    <div class="v-title">Xác thực văn bằng</div>
+    <div class="v-sub">Quét QR hoặc tải ảnh văn bằng để trích xuất số seri</div>
+  </div>
+
+  <div class="v-verify-card">
+    <div class="v-verify-hero">
+      <div class="v-qr-box">
+        <div class="v-qr-corner tl"></div>
+        <div class="v-qr-corner tr"></div>
+        <div class="v-qr-corner bl"></div>
+        <div class="v-qr-corner br"></div>
+      </div>
+
+      <div class="v-tog">
+        <button class="active" data-orient="landscape">Ngang</button>
+        <button data-orient="portrait">Dọc</button>
+      </div>
+
+      <div style="text-align:center;margin-top:14px;">
+        <a class="v-btn" href="vneid-scan.html">Mở camera quét</a>
+        <button class="v-btn outline" id="openFileScan">Tải ảnh để quét</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/js/vneid.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Văn bằng/Chứng chỉ — VNeID (mock)</title>
+<link rel="stylesheet" href="assets/css/vneid-mock.css">
+</head>
+<body class="vneid">
+<div class="v-page">
+  <div class="v-top">
+    <a class="v-back" href="vneid-home.html">← Quay lại</a>
+    <div class="v-title">Văn bằng/Chứng chỉ</div>
+    <div class="v-sub">Các văn bằng của công dân</div>
+  </div>
+
+  <div class="v-card" data-link="vneid-diploma-detail.html">
+    <div class="v-row">
+      <img class="thumb" src="assets/images/vneid-card1.png" alt="">
+      <div>
+        <div class="h">Bằng tốt nghiệp THPT</div>
+        <div class="s">Số seri: A123456 • 2019</div>
+      </div>
+    </div>
+    <div style="margin-top:10px">
+      <a class="v-btn" href="vneid-diploma-detail.html">Xem chi tiết</a>
+    </div>
+  </div>
+
+  <div class="v-card" data-link="vneid-diploma-detail.html">
+    <div class="v-row">
+      <img class="thumb" src="assets/images/vneid-card2.png" alt="">
+      <div>
+        <div class="h">Chứng chỉ Tin học</div>
+        <div class="s">Số seri: B987654 • 2021</div>
+      </div>
+    </div>
+    <div style="margin-top:10px">
+      <a class="v-btn outline" href="vneid-diploma-detail.html">Xem chi tiết</a>
+    </div>
+  </div>
+
+  <div style="height:24px"></div>
+</div>
+<script src="assets/js/vneid.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "diplomas": [
+    {
+      "id": "A123456",
+      "ownerUsername": "havietthang",
+      "name": "Hà Việt Thắng",
+      "title": "Giấy khen Sinh viên xuất sắc",
+      "date": "2025-03-10",
+      "issuer": "ĐH FPT",
+      "status": "valid",
+      "isLegacy": false
+    },
+    {
+      "id": "B654321",
+      "ownerUsername": "nguyenvana",
+      "name": "Nguyễn Văn A",
+      "title": "Chứng chỉ AI cơ bản",
+      "date": "2025-02-01",
+      "issuer": "BKAI",
+      "status": "revoked",
+      "revocationReason": "Sai thông tin đầu vào",
+      "isLegacy": false
+    },
+    {
+      "id": "C000777",
+      "ownerUsername": "havietthang",
+      "name": "Hà Việt Thắng",
+      "title": "Chứng chỉ Tiếng Anh",
+      "date": "2024-12-20",
+      "issuer": "Trung tâm Y",
+      "status": "expired",
+      "isLegacy": false
+    },
+    {
+      "id": "L999001",
+      "ownerUsername": "havietthang",
+      "name": "Hà Việt Thắng",
+      "title": "Bằng tốt nghiệp (scan)",
+      "date": "2019-07-15",
+      "issuer": "Trường Z",
+      "status": "valid",
+      "isLegacy": true
+    }
+  ]
+}

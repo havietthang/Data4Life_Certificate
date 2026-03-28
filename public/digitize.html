@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Số hoá hồ sơ cũ — mô phỏng</title>
+  <link rel="stylesheet" href="https://dichvucong.gov.vn/p/home/theme/vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://dichvucong.gov.vn/p/home/theme/vendor/iconsax/style.css">
+  <link rel="stylesheet" href="https://dichvucong.gov.vn/p/home/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://dichvucong.gov.vn/p/home/theme/vendor/ap8/css/style.css">
+  <link rel="stylesheet" href="https://dichvucong.gov.vn/p/home/theme/css/style.css?version=9">
+  <link rel="shortcut icon" href="https://dichvucong.gov.vn/p/home/img/header/quoc_huy.png">
+  <link rel="stylesheet" href="assets/css/gov-skin.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="relative content d-flex align-items-center justify-content-between">
+        <div class="logo-text">
+          <a class="logo" href="index.html">
+            <img src="https://dichvucong.gov.vn/p/home/theme/img/header/logo.png" alt="Cổng DVCQG">
+          </a>
+        </div>
+        <div class="header-account dropdown d-none d-md-block">
+          <div class="user" data-toggle="dropdown">
+            <div class="avatar" style="background-image:url(https://dichvucong.gov.vn/p/home/theme/img/header/user-avatar.png)"></div>
+            <div class="username">Khách truy cập</div>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a><span class="icon -ap icon-user5"></span> Bản mô phỏng</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="header-nav">
+    <div class="container">
+      <ul id="main-menu" class="pull-left menus nav-app">
+        <li class="active" id="home-page">
+          <a href="index.html" aria-label="Trang chủ">
+            <img src="assets/images/home-icon-silhouette-svgrepo-com.svg" alt="Trang chủ" width="20" height="20" style="vertical-align:middle"/>
+          </a>
+        </li>
+        <li><a href="citizen.html">Công dân</a></li>
+        <li><a href="lookup.html">Tra cứu công khai</a></li>
+        <li><a href="issuer.html">Đơn vị cấp phát</a></li>
+        <li><a href="gov.html">Cơ quan quản lý</a></li>
+        <li><a href="digitize.html">Số hoá hồ sơ cũ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="header-bottom"><div class="container"><ul id="list-dropdown"></ul></div></div>
+
+  <div class="container main-wrap">
+    <div class="hero-lite">
+      <h4 class="mb-1">SỐ HOÁ HỒ SƠ CŨ</h4>
+      <div class="lead">Nộp thông tin văn bằng đã cấp trước đây để đối soát.</div>
+    </div>
+
+    <div class="section-card">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <label>Họ tên trên văn bằng</label>
+          <input class="form-control" id="dig-name" placeholder="Nguyễn Văn A">
+        </div>
+        <div class="col-md-4">
+          <label>Loại văn bằng</label>
+          <input class="form-control" id="dig-title" placeholder="Bằng tốt nghiệp">
+        </div>
+        <div class="col-md-4">
+          <label>Đơn vị cấp</label>
+          <input class="form-control" id="dig-issuer" placeholder="Trường X">
+        </div>
+        <div class="col-md-4">
+          <label>Ngày cấp (ước lượng)</label>
+          <input class="form-control" type="date" id="dig-date">
+        </div>
+        <div class="col-md-4">
+          <label>Tải ảnh/scan (mô phỏng)</label>
+          <input class="form-control" type="file" id="dig-file">
+        </div>
+        <div class="col-md-4 d-flex align-items-end">
+          <label class="d-flex align-items-center gap-2">
+            <input type="checkbox" id="dig-commit"> <span>Tôi cam kết đúng thông tin</span>
+          </label>
+        </div>
+      </div>
+      <div class="mt-2"><button class="btn btn-primary btn-sm" id="btn-digitize"><i class="fa fa-upload"></i> Gửi số hoá</button></div>
+    </div>
+
+    <div class="section-card">
+      <h5>Hồ sơ số hoá của tôi</h5>
+      <div id="dig-list"></div>
+    </div>
+
+    <div class="demo-banner"><strong>Lưu ý:</strong> Đây là <em>bản mô phỏng giao diện</em> phục vụ demo (không kết nối hệ thống thật).</div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="container d-flex flex-wrap gap-3">
+        <div class="add"><p>Cơ quan chủ quản: Văn phòng Chính phủ</p></div>
+        <div class="add"><p>www.dichvucong.gov.vn</p></div>
+        <div class="add"><p>Tổng đài hỗ trợ: 18001096</p></div>
+        <div class="add"><p>Email: dichvucong@chinhphu.vn</p></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

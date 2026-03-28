@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thẻ CCCD</title>
+  <link rel="stylesheet" href="assets/css/vneid-mock.css?v=base">
+  <style>
+    /* Page-specific minimal chrome */
+    body.vneid.cccd { background: var(--bg); }
+    .topbar { position: sticky; top: 0; z-index: 10; background: transparent; padding: 12px 12px 0; }
+    .backlink { display:inline-flex; align-items:center; gap:8px; text-decoration:none; color: var(--ink); font-weight:700; }
+    .backlink .chev { font-size:22px; line-height:1; }
+    .wrap { padding: 12px; }
+    .card { background:#fff; border-radius:16px; padding:8px; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    .card img { display:block; width:100%; height:auto; border-radius:12px; }
+  
+  /* Phone frame for desktop preview */
+  .phone {
+    width: 390px;
+    min-height: 844px;
+    margin: 16px auto;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,.15);
+    background: var(--bg);
+    border:none; /* optional bezel */
+  }
+  .phone .topbar { padding: 12px; background: transparent; }
+  .phone .wrap { padding: 12px; }
+
+</style>
+</head>
+<body class="vneid cccd">
+  <div class="phone">
+  <div class="topbar">
+    <a class="backlink" href="vneid-home.html"><span class="chev">‹</span><span>Thẻ CCCD</span></a>
+  </div>
+  <div class="wrap">
+    <div class="card">
+      <img src="assets/images/vneid-card1.png" alt="Thẻ CCCD">
+    </div>
+  </div>
+  </div>
+</body>
+</html>

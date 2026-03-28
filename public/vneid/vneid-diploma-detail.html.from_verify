@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chi tiết Văn bằng — VNeID (mock)</title>
+<link rel="stylesheet" href="assets/css/vneid-mock.css">
+</head>
+<body class="vneid">
+<div class="v-page">
+  <div class="v-top">
+    <a class="v-back" href="vneid-diplomas.html">← Quay lại</a>
+    <div class="v-title">Chi tiết văn bằng</div>
+  </div>
+
+  <div class="v-card">
+    <img class="v-photo" src="assets/images/vneid-card1.png" alt="">
+  </div>
+
+  <div class="v-info">
+    <div class="line"><span class="k">Họ và tên</span><span>HÀ VIỆT THẮNG</span></div>
+    <div class="line"><span class="k">Số seri</span><span>A123456</span></div>
+    <div class="line"><span class="k">Loại văn bằng</span><span>Bằng tốt nghiệp THPT</span></div>
+    <div class="line"><span class="k">Ngày cấp</span><span>08/06/2022</span></div>
+    <div class="line"><span class="k">Tình trạng</span><span>Hợp lệ</span></div>
+  </div>
+</div>
+<script src="assets/js/vneid.js"></script>
+</body>
+</html>
